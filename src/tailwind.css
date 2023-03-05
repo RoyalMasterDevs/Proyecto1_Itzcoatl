@@ -53,3 +53,11 @@
 .contentdiv_skills{
     @apply flex flex-col text-center justify-center items-center transition-all hover:text-blue-300 hover:scale-110 
 }
+
+.footer_flex{
+    @apply flex flex-col sm:flex-row justify-center sm:justify-between my-5 gap-5
+}
+
+.footer_redes a{
+    @apply text-2xl text-slate-600 bg-white
+}

@@ -6,73 +6,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/fce581bf59.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/tail.css">
+    <link rel="stylesheet" href="../styles/main.css">
     <title>Portafolio_Proyectos</title>
 </head>
 
 <body>
     <header>
-        <h2>ING. ITZCOATL ORTEGA SANTIAGO</h2>
-        <nav>
+        <nav class="nav">
+            <i class="fa-solid fa-bars sm:hidden text-white cursor-pointer" onclick="openMenu()"></i>
+            <ul class="ul-menu">
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="Principal.html">PRINCIPAL</a></li>
+                <li class="active">PORTFOLIO</li>
+            </ul>
+            <div>
+                <button class="hidden sm:block btn-down mr-10">DESCARGAR CV</button>
+                <p class="text-red-700 sm:hidden mr-5 font-bold text-sm sm:text-lg">ITZCOATL ORTEGA SANTIAGO</p>
+            </div>
+        </nav>
+        <nav class="menu-hamburguer-hid" id="item-hambur">
             <ul>
-                <li>Home</li>
-                <li>Principal</li>
-                <li>Portafolio</li>
-                <li>Contacto</li>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="pages/Portafolio.html">PRINCIPAL</a></li>
+                <li class="active-hamburguer">PORTAFOLIO</li>
+                <div class="block mx-auto w-min bg-slate-400">
+                    <button class="block btn-down">DESCARGAR CV</button>
+                </div>
             </ul>
         </nav>
-        <br><br>
+
     </header>
-    <main>
-        <section>
-            <h4>CONOCE ALGUNOS DE LOS PROYECTOS QUE HE REALIZADO</h4>
-            <div>
-                <i class="fa-solid fa-chevron-left"></i>
-                <div>
-                    <img src="../img/proyectos/restaurants.jpeg" alt="proyecto_rest">
-                    <p>Rest_Menu</p>
-                    <br>
-                    <p>
-                        Proyecto de un restaurante donde los clientes se pueden loguear, ver el menú, pedir a domicilio,
-                        y
-                        reservar online.
-                    </p>
-                    <br>
-                    <button>Ver en GitHub</button>
-                </div>
-                <i class="fa-solid fa-chevron-right"></i>
-            </div>
 
-            <div>
-                <i class="fa-solid fa-chevron-left"></i>
-                <div>
-                    <img src="../img/proyectos/restaurants.jpeg" alt="proyecto_rest">
-                    <p>Rest_Menu</p>
-                    <br>
-                    <p>
-                        Proyecto de un restaurante donde los clientes se pueden loguear, ver el menú, pedir a domicilio,
-                        y
-                        reservar online.
-                    </p>
-                    <br>
-                    <button>Ver en GitHub</button>
-                </div>
-                <i class="fa-solid fa-chevron-right"></i>
-            </div>
-        </section>
-    </main>
-    <br><br><br>
-    <footer>
+    <footer class="footer">
         <h3>ING. ITZCOATL ORTEGA SANTIAGO</h3>
-        <hr>
-        <h5>Contáctame</h5>
-        <i class="fa-brands fa-square-whatsapp"></i>
-        <i class="fa-solid fa-envelope"></i>
-        <i class="fa-brands fa-facebook-messenger"></i>
-        <h5>Hecho con el <i class="fa-solid fa-heart"></i></h5>
-        <h5>Zapopan, Jalisco, México</h5><br>
-        <button>CV <i class="fa-solid fa-arrow-down"></i> </button>
-    </footer>
+        <div class="hr"></div>
+        <p>® Derechos Reservados 2023</p>
+        <div class="footer_flex">
+            <h5 style="margin: 0 40px;">Zapopan, Jalisco, México</h5>
+            <div style="margin: 0 40px;">
+                <h5 style="margin-top: -1px;">Contáctame</h5>
+                <div class="flex justify-center items-center gap-5">
+                    <a href=" https://wa.me/523319087302?text=Hola%2¿Podría%20darme%20más%20información%20sobre%20restMa?"
+                        target="_blank">
+                        <i
+                            class="w-full h-full fa-brands fa-whatsapp text-3xl text-white rounded-full py-2 px-3 hover:bg-slate-200 hover:text-slate-600 transition-all duration-500">
+                        </i>
+                    </a>
+                    <a href="tel:+523319087302" target="_blank">
+                        <i
+                            class="fa-solid fa-phone w-full h-full text-2xl text-white rounded-full py-2 px-3 hover:bg-slate-200 hover:text-slate-600 transition-all duration-500"></i>
+                    </a>
+                    <a href="mailto:example@gmail.com" target="_blank">
+                        <i
+                            class="fa-solid fa-envelope w-full h-full text-2xl text-white rounded-full py-2 px-3 hover:bg-slate-200 hover:text-slate-600 transition-all duration-500"></i>
+                    </a>
 
+                </div>
+            </div>
+            <h5 style="margin: 0 40px;">Hecho con el <i class="fa-solid fa-heart"></i></h5>
+        </div>
+        <button class="btn-down">DESCARGAR CV <i class="pl-2 fa-solid fa-arrow-down"></i> </button>
+    </footer>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

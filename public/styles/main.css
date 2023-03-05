@@ -110,12 +110,3 @@ nav{
     margin: 10px auto;
     background-color: #b0b3ca;
 }
-
-.footer_flex{
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    color: #222;
-}
