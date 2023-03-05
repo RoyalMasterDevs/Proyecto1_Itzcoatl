@@ -4,7 +4,8 @@
 
 *{
     box-sizing: border-box;
-    list-style-type: none
+    list-style-type: none;
+    text-decoration: none;
 }
 
 body{
@@ -16,73 +17,48 @@ body{
 }
 
 nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100px;
     background: var(--fondo);
 }
 
-ul{
-    display: flex;
-    width: 100%;;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
+.nav{
+    z-index: 100 !important;
 }
 
-.ul-li{
-    width: min-content;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-}
-
-li{
-    cursor: pointer;
-    margin: 0 20px;
-    padding-bottom: 3px;
-}
-
-li:hover{
-    border-bottom: 2px solid rgb(221, 224, 33);
-}
-
-.active{
+.active, .active-hamburguer{
     color: #992424;
     cursor:none;
     padding-bottom: 3px;
+}
+
+.active{
     border-bottom: 2px solid white;
 }
 
 .active:hover{
+    color: #992424 !important;
+    border-bottom: 2px solid white;
+}
+
+.active-hamburguer:hover{
+    color: #992424 !important;
+}
+
+.ul-menu li:hover{
     border-bottom: 2px solid white;
 }
 
 .btn-down{
+    width: 150px;
     padding: 5px;
-    margin-right: 20px;
     background: linear-gradient( #C4C7E5, #212B88);;
     color: white;
     border: none;
     cursor: pointer;
 }
 
-.section_profile{
-    margin-top: 10px;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.imgProfile{
-    width: 30%;
-    height: 50vh;
-    border-radius: 10px;
+.btn-down:hover{
+    background: linear-gradient(#212B88, #C4C7E5);
+    transition: 2s;
 }
 
 .art_profile{
@@ -91,6 +67,8 @@ li:hover{
 }
 
 .footer_flecha{
+    position: absolute;
+    bottom: 15px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -112,4 +90,32 @@ li:hover{
     background-color: #212B88;
     color:white;
     cursor: pointer;
+}
+
+.footer{
+    margin-top: 10px;
+    background: var(--fondo);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer_ing{
+    margin-top: 80px;
+}
+
+.hr{
+    width: 80%;
+    height: 5px;
+    margin: 10px auto;
+    background-color: #b0b3ca;
+}
+
+.footer_flex{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: #222;
 }
