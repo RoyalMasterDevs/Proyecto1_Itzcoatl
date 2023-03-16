@@ -27,15 +27,15 @@
 }
 
 .menu-hamburguer-hid{
-    @apply block sm:hidden w-full h-min -translate-y-60 transition-all duration-1000 text-center bg-slate-400 
+    @apply block sm:hidden w-full h-min -translate-y-60 transition-all duration-1000 text-center bg-slate-200 
 }
 
 .menu-hamburguer{
-    @apply block sm:hidden w-full transition-all duration-1000 translate-y-0 bg-slate-400 
+    @apply block sm:hidden w-full transition-all duration-1000 translate-y-0 bg-slate-200
 }
 
 .menu-hamburguer ul{
-    @apply flex flex-col text-center p-3 text-white w-full bg-slate-400
+    @apply flex flex-col text-center p-3 text-white w-full bg-slate-200
 }
 
 .menu-hamburguer ul li{
@@ -60,4 +60,33 @@
 
 .footer_redes a{
     @apply text-2xl text-slate-600 bg-white
+}
+
+.conocimientos, .school{
+    @apply w-full h-auto my-3
+}
+
+.card_school{
+    @apply flex flex-col justify-center items-center w-[90%] h-full bg-[#c0bde0] rounded-md shadow-lg my-10 mx-auto pb-3 px-2
+}
+
+
+.card{
+    @apply rounded-xl h-full w-full
+}
+
+.cont-img-serv{
+    @apply  bg-violet-500 text-white cursor-pointer rounded-lg w-full
+}
+
+.content-card-all{
+    @apply absolute top-0 left-0 w-full h-full rounded-xl bg-white opacity-0 transition-all duration-500 group-hover:opacity-90 group-hover:bg-slate-600 
+}
+
+.card-title{
+    @apply text-center block group-hover:mt-5 transition-all text-lg font-bold text-white duration-300 delay-300
+}
+
+.card-text{
+    @apply text-center block group-hover:mt-5 transition-all text-white duration-300 delay-300
 }

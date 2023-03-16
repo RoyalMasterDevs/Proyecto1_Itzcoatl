@@ -48,6 +48,7 @@ nav{
 }
 
 .btn-down{
+    margin-left: 60px;
     width: 150px;
     padding: 5px;
     background: linear-gradient( #C4C7E5, #212B88);;
@@ -109,4 +110,140 @@ nav{
     height: 5px;
     margin: 10px auto;
     background-color: #b0b3ca;
+}
+
+/* ------------PORTAFOLIO------------- */
+.carousel__projects{
+    position: relative;
+    width: 80%;
+    margin: 30px auto;
+    border-radius: 15px;
+}
+
+.carousel__listaProyects{
+    border-radius: 15px;
+    background-color: rgba(214, 199, 199, 0.8);
+}
+
+.carousel__elemento{
+    background-color: rgb(76, 68, 187);
+    text-align: center;
+    padding: 3px;
+}
+
+.carousel__elemento img {
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 15px;
+    margin: auto;
+}
+
+.carousel__anteriorProject,
+.carousel__siguienteProject {
+    position: absolute;
+    display: block;
+    top: calc(50% - 35px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding-top: 17px;
+}
+
+.carousel__anteriorProject:hover,
+.carousel__siguienteProject:hover {
+    background-color: rgb(162, 141, 190);
+    color: white;
+}
+
+#flechaAnt2,
+#flechaSig2 {
+    padding-top: 10px;
+    width: 50px;
+    height: 50px;
+    clip-path: circle(35%);
+}
+
+.carousel__siguienteProject {
+    right: -80px;
+}
+
+.carousel__anteriorProject {
+    left: -80px;
+}
+
+.carousel__indicadoresProyecto .glider-dot {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: rgb(79, 75, 114);
+    opacity: 0.7;
+    border-radius: 0;
+}
+
+.carousel__indicadoresProyecto .glider-dot:hover {
+    opacity: 0.5;
+}
+
+.carousel__indicadoresProyecto .glider-dot.active {
+    opacity: 1;
+    background-color: #b44;
+}
+
+@media(max-width:900px){
+    .carousel__anteriorProject {
+        left: -50px;
+    }
+
+    .carousel__siguienteProject {
+        right: -50px;
+    }
+}
+
+@media(max-width:773px){
+    .carousel__indicadoresProyecto .glider-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+    }
+ 
+}
+
+@media (max-width: 600px) {
+    #flechaAnt2 {
+        left: 5px;
+    }
+
+    #flechaSig2 {
+        right: 5px;
+    }
+
+
+    .carousel__projects {
+        width: 95%;
+        margin: auto;
+    }
+
+    .contenidoProyectos {
+        padding: 0;
+    }
+}
+
+@media(max-width: 350px) {
+    .carousel__projects{
+        width: 95%;
+    }
+}
+
+.img_services {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.p_title{
+    font-weight: bold;
+    color: #fff;
 }
