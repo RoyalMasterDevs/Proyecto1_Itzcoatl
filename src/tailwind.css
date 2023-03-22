@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.section_profile{
+    @apply w-full my-3 flex flex-col justify-center items-center
+}
+
+.section_profile img{
+    @apply w-full px-2 xsm:w-[90%] ssm:w-[50%] md:w-[40%] lg:w-[30%] sm:h-[2%] rounded-xl shadow-slate-400
+}
+
+.nav{
+    @apply w-full h-28 flex justify-between items-center pl-5
+}
+
+.ul-menu{
+    @apply w-full hidden sm:flex justify-start items-center gap-5
+}
+
+.ul-menu li{
+    @apply pb-3
+}
+
+.ul-menu li a{
+    @apply hover:text-white transition-all duration-300
+}
+
+.menu-hamburguer-hid{
+    @apply block sm:hidden w-full h-min -translate-y-60 transition-all duration-1000 text-center bg-slate-200 
+}
+
+.menu-hamburguer{
+    @apply block sm:hidden w-full transition-all duration-1000 translate-y-0 bg-slate-200
+}
+
+.menu-hamburguer ul{
+    @apply flex flex-col text-center p-3 text-white w-full bg-slate-200
+}
+
+.menu-hamburguer ul li{
+    @apply block w-full my-1
+}
+
+.menu-hamburguer ul li a{
+    @apply block w-full hover:bg-slate-700
+}
+
+.content_skills{
+    @apply flex gap-5 flex-wrap justify-center items-center w-full
+}
+
+.contentdiv_skills{
+    @apply flex flex-col text-center justify-center items-center transition-all hover:text-blue-300 hover:scale-110 
+}
+
+.footer_flex{
+    @apply flex flex-col sm:flex-row justify-center sm:justify-between my-5 gap-5
+}
+
+.footer_redes a{
+    @apply text-2xl text-slate-600 bg-white
+}
+
+.conocimientos, .school{
+    @apply w-full h-auto my-3
+}
+
+.card_school{
+    @apply flex flex-col justify-center items-center w-[90%] h-full bg-[#c0bde0] rounded-md shadow-lg my-10 mx-auto pb-3 px-2
+}
+
+
+.card{
+    @apply rounded-xl h-full w-full
+}
+
+.cont-img-serv{
+    @apply  bg-violet-500 text-white cursor-pointer rounded-lg w-full
+}
+
+.content-card-all{
+    @apply absolute top-0 left-0 w-full h-full rounded-xl bg-white opacity-0 transition-all duration-500 group-hover:opacity-90 group-hover:bg-slate-600 
+}
+
+.card-title{
+    @apply text-center block group-hover:mt-5 transition-all text-lg font-bold text-white duration-300 delay-300
+}
+
+.card-text{
+    @apply text-center block group-hover:mt-5 transition-all text-white duration-300 delay-300
+}

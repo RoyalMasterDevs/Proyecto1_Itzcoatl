@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fce581bf59.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/tail.css">
+
+    <title>Ing. Itzcoatl Ortega Santiago</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <i class="fa-solid fa-bars sm:hidden text-white cursor-pointer" onclick="openMenu()"></i>
+            <ul class="ul-menu">
+                <li class="active">INICIO</li>
+                <li><a href="pages/Principal.html">PRINCIPAL</a></li>
+                <li><a href="pages/Portafolio.html">PORTFOLIO</a></li>
+            </ul>
+            <div>
+                <button class="hidden sm:block btn-down mr-10">
+                    <a href="../../cv/Curriculum.pdf" download="Curriculum.pdf" class="btn group">DESCARGAR CV</a>
+                </button>
+                <p class="text-red-700 sm:hidden mr-5 font-bold text-sm xsm:text-lg">ITZCOATL ORTEGA SANTIAGO</p>
+            </div>
+        </nav>
+        <nav class="menu-hamburguer-hid" id="item-hambur">
+            <ul>
+                <li class="active-hamburguer">INICIO</li>
+                <li><a href="pages/Principal.html">PRINCIPAL</a></li>
+                <li><a href="pages/Portafolio.html">PORTAFOLIO</a></li>
+                <div class="block mx-auto w-min bg-transparent">
+                    <a href="../../cv/Curriculum.pdf" download="Curriculum.pdf" class="mr-[60px]">
+                        <button class="btn-down">DESCARGAR CV <i class="pl-2 fa-solid fa-arrow-down"></i> </button>
+                    </a>
+                </div>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="section_profile">
+        <img src="img/profile.jpeg" alt="MyProfile" class="imgProfile">
+        <article class="art_profile">
+            <p>
+                ITZCOATL ORTEGA SANTIAGO
+            </p>
+            <P>
+                ING. DESARROLLO DE SOFTWARE
+            </P>
+        </article>
+
+        <article class="w-full">
+            <div class="text-center mt-5 mx-auto group w-full">
+                <div
+                    class="relative w-[95%] xms:w-[80%] sm:w-[50%] lg:w-4/12 mx-auto group-hover:bg-slate-700 group-hover:text-slate-100 transition-all duration-500">
+                    <h2 class="text-2xl py-3 mt-24">Escolaridad y Conocimientos</h2>
+                    <!-- efecto hover -->
+                    <div
+                        class="absolute bottom-0 left-0 w-full h-1 duration-700 origin-left transform scale-x-0 bg-slate-600 group-hover:scale-x-100">
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 w-1 h-full duration-700 origin-bottom transform scale-y-0 bg-slate-600 group-hover:scale-y-100">
+                    </div>
+                    <div
+                        class="absolute top-0 left-0 w-full h-1 duration-700 origin-right transform scale-x-0 bg-slate-600 group-hover:scale-x-100">
+                    </div>
+                    <div
+                        class="absolute bottom-0 right-0 w-1 h-full duration-700 origin-top transform scale-y-0 bg-slate-600 group-hover:scale-y-100">
+                    </div>
+                </div>
+                <div class="school text-center">
+                    <div class="card_school">
+                        <div
+                            class="flex gap-5 border-b-2 border-b-slate-300 w-[80%] mx-auto text-center justify-center items-center">
+                            <p class="py-5 font-bold text-xl">Escolaridad</p>
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+
+                        <p class="mt-5 font-bold"> Ing. Desarrollo de Software</p>
+                        <p class="pb-3 pt-1 text-school">
+                            He aprendido a desarrollar programas en distintos lemguajes, y he logrado realizar distintos
+                            proyectos relacionados al desarrollo de software. Aprendí lo básico de páginas web tanto del
+                            front
+                            como del back,
+                            y hasta la fecha, es lo que más he disfrutado durante todo este tiempo.
+                        </p>
+
+                        <div class="flex flex-col justify-center md:justify-between md:flex-row w-full text-center">
+                            <div class="block md:mr-5">
+                                <p class="mt-5 font-bold"> Diplomado Full Stack en The Royale Master Academy</p>
+                                <p class="pb-3 pt-1 text-school">
+                                    Actualmente tmbién estoy estudiando un diplomado FULL STACK en donde espero aprender
+                                    más cosas del lado del back,
+                                    enfocandolo a bases de datos no relacionales y apis.
+                                </p>
+                            </div>
+
+                            <div class="block md:ml-5">
+                                <p class="mt-5 font-bold">Tecnólogo en Control Automático e Instrumentación</p>
+                                <p class="pb-3 pt-1 text-school">
+                                    Aprendí conceptos básicos y avanzados de automatización de procesos, mediciones de
+                                    control,
+                                    electrónica básica y avazada. Realicé algunos proyectos de automatización y
+                                    desarrollé
+                                    lógica
+                                    matemática.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </article>
+    </section>
+
+
+    <footer class="footer">
+        <h3>ING. ITZCOATL ORTEGA SANTIAGO</h3>
+        <div class="hr"></div>
+        <p>® Derechos Reservados 2023</p>
+        <div class="footer_flex">
+            <h5 style="margin: 0 40px;">Zapopan, Jalisco, México</h5>
+            <div style="margin: 0 40px;">
+                <h5 style="margin-top: -1px;">Contáctame</h5>
+                <div class="flex justify-center items-center gap-5">
+                    <a href=" https://wa.me/523319087302?text=Hola%2¿Podría%20darme%20más%20información%20sobre%20restMa?"
+                        target="_blank">
+                        <i
+                            class="w-full h-full fa-brands fa-whatsapp text-3xl text-white rounded-full py-2 px-3 hover:bg-slate-200 hover:text-slate-600 transition-all duration-500">
+                        </i>
+                    </a>
+                    <a href="tel:+523319087302" target="_blank">
+                        <i
+                            class="fa-solid fa-phone w-full h-full text-2xl text-white rounded-full py-2 px-3 hover:bg-slate-200 hover:text-slate-600 transition-all duration-500"></i>
+                    </a>
+                    <a href="mailto:ix.obsid@gmail.com" target="_blank">
+                        <i
+                            class="fa-solid fa-envelope w-full h-full text-2xl text-white rounded-full py-2 px-3 hover:bg-slate-200 hover:text-slate-600 transition-all duration-500"></i>
+                    </a>
+
+                </div>
+            </div>
+            <h5 style="margin: 0 40px;">Hecho con el <i class="fa-solid fa-heart"></i></h5>
+        </div>
+        <a href="../../cv/Curriculum.pdf" download="Curriculum.pdf" class="btn group">
+            <button class="btn-down">DESCARGAR CV <i class="pl-2 fa-solid fa-arrow-down"></i> </button>
+        </a>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
